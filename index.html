@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-
-
 <head>
-
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cookies - Pastelería</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Tu CSS personalizado (va después de Bootstrap para poder sobrescribirlo) -->
-  <link href="css/style.css" rel="stylesheet">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Pastelería Mil Sabores</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-
-
 <body>
 
-  <h1>Hola, esto es una prueba</h1>
+    <header>
+        <h1>Pastelería Mil Sabores</h1>
+        <p>Tortas y postres artesanales hechos con dedicación</p>
+    </header>
 
-  <!-- Bootstrap JS (necesario para menús, botones desplegables, etc.) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="bienvenida">
+            <h2>Bienvenido a nuestra pastelería</h2>
+            <p>Somos una pastelería familiar dedicada a preparar tortas y postres frescos todos los días. Elige entre una gran variedad de sabores y encuentra el producto perfecto para cada ocasión.</p>
+            <img class="bienvenida-imagen" src="img/Torta_Cuadrada_Frutas.webp" alt="Torta Cuadrada de Frutas de la pastelería">
+        </section>
+
+        <section id="destacados">
+            <h2>Productos destacados</h2>
+            <div class="contenedor-productos">
+
+                <article class="tarjeta-producto">
+                    <img src="img/Torta_Cuadrada_Chocolate.webp" alt="Torta Cuadrada de Chocolate">
+                    <h3>Torta Cuadrada de Chocolate</h3>
+                    <p>Ganache de chocolate con un toque de avellanas.</p>
+                    <p class="precio">$45.000 CLP</p>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="img/Torta_Circular_Manjar.webp" alt="Torta Circular de Manjar">
+                    <h3>Torta Circular de Manjar</h3>
+                    <p>Torta tradicional chilena con manjar y nueces.</p>
+                    <p class="precio">$42.000 CLP</p>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="img/Tarta_De_Santiago.webp" alt="Tarta de Santiago">
+                    <h3>Tarta de Santiago</h3>
+                    <p>Tradicional tarta española con almendras.</p>
+                    <p class="precio">$6.000 CLP</p>
+                </article>
+
+            </div>
+            <a href="tienda.html"><button type="button">Ver toda la tienda</button></a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Pastelería Mil Sabores</p>
+        <p>Av. Siempre Viva 123, Santiago, Chile</p>
+        <p>Teléfono: +56 9 1234 5678 | Correo: contacto@milsabores.cl</p>
+        <p>&copy; 2026 Pastelería Mil Sabores</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
