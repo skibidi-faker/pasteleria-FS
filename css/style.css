@@ -1,3 +1,4 @@
+/* Estilos generales del sitio - Pastelería Mil Sabores */
 
 body {
     font-family: Arial, sans-serif;
@@ -16,8 +17,18 @@ header {
 
 nav {
     background-color: #D7A86E;
-    text-align: center;
-    padding: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    color: #5D4037;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 nav ul {
@@ -54,10 +65,12 @@ section {
 
 /* Sección de bienvenida */
 .bienvenida-imagen {
-    max-width: 400px;
-    width: 100%;
+    max-width: 100%; /* <--- Cambia esto de 400px a 100% */
+    width: 100%; /* Esto asegura que ocupe todo el ancho del contenedor */
     border-radius: 8px;
     margin-top: 15px;
+    display: block; /* Ayuda a centrarla y evitar espacios extra */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* Tarjetas de productos destacados (mismo estilo que la tienda) */
@@ -107,5 +120,57 @@ footer {
 }
 
 footer a {
+    color: #FFF5E1;
+}
+
+/* Sección "Nosotros" - rectángulo destacado con color distinto, de lado a lado */
+.seccion-nosotros {
+    background-color: #3E2723;
+    color: #FFF5E1;
+    width: 100%;
+    margin: 0;
+    padding: 30px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.nosotros-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nosotros-texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.nosotros-imagen {
+    flex: 1;
+    min-width: 200px;
+}
+
+.nosotros-imagen img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.nosotros-contacto {
+    margin-top: 20px;
+    border-top: 1px solid #FFF5E1;
+    padding-top: 15px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nosotros-contacto a {
     color: #FFF5E1;
 }
