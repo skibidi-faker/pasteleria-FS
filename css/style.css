@@ -123,35 +123,41 @@ footer a {
     color: #FFF5E1;
 }
 
-/* Sección "Nosotros" - rectángulo destacado con color distinto, de lado a lado */
-.seccion-nosotros {
-    background-color: #3E2723;
-    color: #FFF5E1;
-    width: 100%;
-    margin: 0;
-    padding: 30px 20px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.nosotros-contenido {
+/* Estilos Quiénes Somos */
+.seccion-quienes-somos {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
-    align-items: center;
-    text-align: left;
-    max-width: 1000px;
-    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: left !important; /* Anula el centrado general de las secciones */
 }
 
-.nosotros-texto {
+.tarjeta-enunciado {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.contenedor-mision-vision {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.caja-mision,
+.caja-vision {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
     flex: 1;
-    min-width: 250px;
+    min-width: 280px;
 }
 
 .nosotros-imagen {
-    flex: 1;
-    min-width: 200px;
+    max-width: 1000px;
+    margin: 0 auto 20px;
 }
 
 .nosotros-imagen img {
@@ -163,14 +169,12 @@ footer a {
 }
 
 .nosotros-contacto {
-    margin-top: 20px;
-    border-top: 1px solid #FFF5E1;
-    padding-top: 15px;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .nosotros-contacto a {
-    color: #FFF5E1;
+    color: #5D4037;
 }
