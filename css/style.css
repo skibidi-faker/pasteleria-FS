@@ -73,7 +73,7 @@ section {
     height: auto;
 }
 
-/* Tarjetas de productos (3 por fila corregido) */
+/* Tarjetas de productos (3 por fila) */
 .contenedor-productos {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +104,7 @@ button {
     padding: 10px 18px;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -123,26 +123,55 @@ footer a {
     color: #FFF5E1;
 }
 
-/* Estilos Quiénes Somos */
+/* Estilos Quiénes Somos (Dos columnas) */
 .seccion-quienes-somos {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 1px; 
     text-align: left !important;
 }
 
-.tarjeta-enunciado {
+.tarjeta-sobre-nosotros {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 25px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.texto-nosotros {
+    flex: 1;
+    min-width: 280px;
+    text-align: justify;
+}
+
+.texto-nosotros h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.imagen-nosotros {
+    flex: 1;
+    min-width: 280px;
+}
+
+.imagen-nosotros img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
 }
 
 .contenedor-mision-vision {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 20px; /* Compactado */
 }
 
 .caja-mision,
@@ -179,19 +208,6 @@ footer a {
     object-fit: cover;
 }
 
-.nosotros-imagen {
-    max-width: 1000px;
-    margin: 0 auto 20px;
-}
-
-.nosotros-imagen img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-}
-
 .nosotros-contacto {
     background-color: white;
     border: 1px solid #ccc;
@@ -201,4 +217,81 @@ footer a {
 
 .nosotros-contacto a {
     color: #5D4037;
+}
+
+
+/* --- Estilos Sección Testimonios (3 en una fila) --- */
+
+.seccion-testimonios {
+    margin-bottom: 50px;
+}
+
+.seccion-testimonios h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5D4037;
+}
+
+.contenedor-testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tarjeta-testimonio {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 310px; /* Mismo ancho que las tarjetas de productos para mantener simetría */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.estrellas {
+    color: #D7A86E;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.tarjeta-testimonio p {
+    text-align: justify;
+    color: #5D4037;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.datos-cliente {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.foto-cliente {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.datos-cliente h4 {
+    margin: 0;
+    font-size: 1em;
+    color: #5D4037;
+}
+
+.datos-cliente span {
+    font-size: 0.85em;
+    color: #D7A86E;
+    font-weight: bold;
 }
