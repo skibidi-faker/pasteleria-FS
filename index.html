@@ -3,54 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Pastelería Mil Sabores</title>
+    <title>🎂 Pastelería Mil Sabores - Inicio</title>
+    <meta name="description" content="Pastelería Mil Sabores, tortas y postres artesanales hechos con dedicación.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <h1>Pastelería Mil Sabores</h1>
-        <p>Tortas y postres artesanales hechos con dedicación</p>
+        <div class="logo">
+            <a href="index.html"> <img src="img/logo.png" /><h1>Pastelería Mil Sabores</h1></a>
+        </div>
     </header>
 
     <nav>
-        <div class="logo">
-            <a href="index.html">🎂 Mil Sabores</a>
-        </div>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html" class="current">Inicio</a></li>
             <li><a href="tienda.html">Tienda</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="login.html">Mi cuenta</a></li>
+            <li>
+                <a href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+            </li>
         </ul>
     </nav>
 
+    <img class="bienvenida-imagen" src="img/hero.png" alt="Torta Cuadrada de Frutas de la pastelería">
+    
     <main>
-
         <section id="bienvenida">
-            <h2>Bienvenido a nuestra pastelería</h2>
-            <p>Somos una pastelería familiar dedicada a preparar tortas y postres frescos todos los días. Elige entre una gran variedad de sabores y encuentra el producto perfecto para cada ocasión.</p>
-            <img class="bienvenida-imagen" src="img/Hero.webp" alt="Torta Cuadrada de Frutas de la pastelería">
+            <h2>¡Bienvenido a nuestra pastelería!</h2>
+            <p>Creadores de la torta más <b>grande del mundo en 1995</b>. Hoy renovamos nuestra tienda digital para llevar los clásicos sabores de siempre directo a tu hogar.</p>
+            <button type="button" id="go-nosotros">Sobre Nosotros</button>
         </section>
 
         <section id="destacados">
             <h2>Productos destacados</h2>
             <div class="contenedor-productos">
 
-                <article class="tarjeta-producto">
+                <article class="tarjeta-producto tarjeta-base">
                     <img src="img/Torta_Naranja_Sin_Azucar.webp" alt="Torta Naranja Sin Azúcar">
                     <h3>Torta Naranja Sin Azúcar</h3>
                     <p>Torta ligera y deliciosa, endulzada naturalmente.</p>
                     <p class="precio">$48.000 CLP</p>
                 </article>
                 
-                <article class="tarjeta-producto">
+                <article class="tarjeta-producto tarjeta-base">
                     <img src="img/Torta_Cuadrada_Frutas.webp" alt="Torta Cuadrada de Frutas">
                     <h3>Torta Cuadrada de Frutas</h3>
                     <p>Torta fresca con frutas de temporada y crema batida.</p>
                     <p class="precio">$42.000 CLP</p>
                 </article>
 
-                <article class="tarjeta-producto">
+                <article class="tarjeta-producto tarjeta-base">
                     <img src="img/Tarta_De_Santiago.webp" alt="Tarta de Santiago">
                     <h3>Tarta de Santiago</h3>
                     <p>Tradicional tarta española con almendras.</p>
@@ -58,42 +75,39 @@
                 </article>
 
             </div>
-            <a href="tienda.html"><button type="button">Ver toda la tienda</button></a>
+            <a href="tienda.html" class="button">Ver toda la tienda</a>
         </section>
 
-        <section id="nosotros" class="seccion-quienes-somos">
-
-        <section class="seccion-quienes-somos">
-            <div class="tarjeta-sobre-nosotros">
+        <section class="seccion-quienes-somos" id="nosotros">
+            <div class="tarjeta-sobre-nosotros tarjeta-base">
                 <div class="texto-nosotros">
                     <h2>🎂 Sobre Nosotros</h2>
-                    <p>En Pastelería Mil Sabores llevamos 10 años trabajando para llevar la felicidad a través de nuestros pasteles a tu hogar. Queremos ver a nuestros clientes felices y ser parte de esos momentos únicos en su vida.</p>
+                    <p>En Pastelería Mil Sabores llevamos 50 años trabajando para llevar la felicidad a través de nuestros pasteles a tu hogar. Queremos ver a nuestros clientes felices y ser parte de esos momentos únicos en su vida.</p>
                     <p>Nuestro equipo de pasteleros comparte nuestra visión al momento de elaborar nuestros productos, y estamos orgullosos de su trabajo. De la mano de ellos, queremos seguir siendo parte de la vida de nuestros clientes.</p>
                 </div>
                 <div class="imagen-nosotros">
                     <img src="img/Quienes_somos.webp" alt="Equipo de pasteleros en Mil Sabores">
                 </div>
             </div>
-        </section>
-
             <div class="contenedor-mision-vision">
-                <div class="caja-mision">
+                <div class="caja-mision tarjeta-base">
                     <h2>🍩 Misión</h2>
-                    <p>Elaborar productos de calidad de la mano de un equipo de pasteleros comprometido y orgulloso de su trabajo.</p>
+                    <p>Creamos experiencias dulces e inolvidables con repostería de alta calidad, honrando nuestra tradición e historia en cada celebración.</p>
                 </div>
-                <div class="caja-vision">
+                <div class="caja-vision tarjeta-base">
                     <h2>🕯️ Visión</h2>
-                    <p>Ser parte de los momentos únicos en la vida de nuestros clientes, llevando felicidad a cada hogar a través de nuestros pasteles.</p>
+                    <p>Ser la pastelería online líder de Chile, reconocida por la calidad de nuestros productos, la innovación digital y el impulso a nuevos talentos gastronómicos de la comunidad.</p>
                 </div>
             </div>
+        </section>
 
-            <section class="seccion-impacto">
-                <div class="tarjeta-impacto">
-                    <h2>🤝 Impacto Comunitario y Apoyo Local</h2>
-                    <img src="img/Impacto.webp" alt="Estudiantes de pastelería" class="imagen-impacto">
-                    <p>En Pastelería Mil Sabores creemos que cada dulce momento debe trascender. Por eso, parte de nuestras iniciativas y ventas están destinadas a colaborar activamente con la comunidad local y apoyar de forma directa la formación de los nuevos talentos de la gastronomía nacional, creando un espacio de aprendizaje e innovación para los futuros profesionales.</p>
-                </div>
-            </section>
+        <section class="seccion-impacto">
+            <div class="tarjeta-impacto tarjeta-base">
+                <h2>🤝 Impacto Comunitario y Apoyo Local</h2>
+                <img src="img/Impacto.webp" alt="Estudiantes de pastelería" class="imagen-impacto">
+                <p>En Pastelería Mil Sabores creemos que cada dulce momento debe trascender. Por eso, parte de nuestras iniciativas y ventas están destinadas a colaborar activamente con la comunidad local y <b>apoyar de forma directa la formación de los nuevos talentos de la gastronomía nacional</b>, creando un espacio de aprendizaje e innovación para los futuros profesionales.</p>
+            </div>
+        </section>
 
 
         <!-- Sección de Testimonios -->
@@ -102,7 +116,7 @@
             <div class="contenedor-testimonios">
 
                 <!-- Testimonio 1 -->
-                <article class="tarjeta-testimonio">
+                <article class="tarjeta-testimonio tarjeta-base">
                     <div class="estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <p>"¡Las mejores tortas de Santiago! Pedí una de chocolate para un cumpleaños y fue un éxito total. Súper húmeda y el sabor increíble. 100% recomendados."</p>
                     <div class="datos-cliente">
@@ -115,7 +129,7 @@
                 </article>
 
                 <!-- Testimonio 2 -->
-                <article class="tarjeta-testimonio">
+                <article class="tarjeta-testimonio tarjeta-base">
                     <div class="estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <p>"Excelente servicio y calidad. Probé los postres individuales para una reunión y a todos les encantaron. La presentación es hermosa y el sabor inigualable."</p>
                     <div class="datos-cliente">
@@ -128,7 +142,7 @@
                 </article>
 
                 <!-- Testimonio 3 -->
-                <article class="tarjeta-testimonio">
+                <article class="tarjeta-testimonio tarjeta-base">
                     <div class="estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <p>"El sabor de la tradición se nota en cada bocado. Me encanta que usen ingredientes naturales. Sus tortas de frutas son mi perdición. ¡Excelente trabajo, equipo!"</p>
                     <div class="datos-cliente">
@@ -143,8 +157,10 @@
             </div>
         </section>
 
-            <!-- contacto -->
-            <div class="nosotros-contacto">
+        <!-- Contacto -->
+        <section class="no-border">
+            <h2>✉️ Contáctanos</h2>
+            <div class="nosotros-contacto tarjeta-base">
                 <p>📷 Instagram: <a href="https://instagram.com/milsabores.cl" target="_blank" rel="noopener">@milsabores.cl</a></p>
                 <p>✉️ Correo: contacto@milsabores.cl</p>
                 <p>📞 Teléfono: +56 9 8765 4321</p>
